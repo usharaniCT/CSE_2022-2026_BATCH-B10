@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Detection Result</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f4f6f9;
+margin:0;
+padding:0;
+}
+
+.header{
+background:#2c3e50;
+color:white;
+padding:15px;
+text-align:center;
+font-size:26px;
+font-weight:bold;
+}
+
+.container{
+width:1000px;
+margin:auto;
+margin-top:40px;
+display:flex;
+gap:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0px 4px 12px rgba(0,0,0,0.15);
+}
+
+.image-box{
+width:40%;
+text-align:center;
+}
+
+.image-box img{
+width:100%;
+border-radius:10px;
+}
+
+.result-box{
+width:60%;
+}
+
+.result-title{
+font-size:24px;
+margin-bottom:20px;
+}
+
+.badge{
+padding:8px 18px;
+border-radius:20px;
+color:white;
+font-weight:bold;
+font-size:16px;
+}
+
+.normal{
+background:#28a745;
+}
+
+.moderate{
+background:#f39c12;
+}
+
+.severe{
+background:#e74c3c;
+}
+
+.bar{
+height:12px;
+background:#ddd;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.fill{
+height:12px;
+border-radius:10px;
+}
+
+.green{
+background:#28a745;
+}
+
+.orange{
+background:#f39c12;
+}
+
+.red{
+background:#e74c3c;
+}
+
+.suggestion-box{
+background:#eef3f8;
+padding:15px;
+border-radius:8px;
+margin-top:20px;
+line-height:1.6;
+font-size:15px;
+white-space:pre-line;
+}
+
+.button{
+margin-top:25px;
+display:inline-block;
+padding:10px 20px;
+background:#3498db;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+.button:hover{
+background:#2980b9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+AI Insect Damage Detection System
+</div>
+
+<div class="container">
+
+<!-- IMAGE CARD -->
+<div class="card image-box">
+
+<h3>Uploaded Image</h3>
+
+<img src="/static/uploads/{{image}}" alt="Uploaded Image">
+
+</div>
+
+
+<!-- RESULT CARD -->
+<div class="card result-box">
+
+<div class="result-title">
+
+Detection Result :
+
+<span class="badge {{result}}">
+{{result | upper}}
+</span>
+
+</div>
+
+
+<h3>Prediction Confidence</h3>
+
+<p>Normal ({{normal}}%)</p>
+
+<div class="bar">
+<div class="fill green" style="width:{{normal}}%"></div>
+</div>
+
+
+<p>Moderate ({{moderate}}%)</p>
+
+<div class="bar">
+<div class="fill orange" style="width:{{moderate}}%"></div>
+</div>
+
+
+<p>Severe ({{severe}}%)</p>
+
+<div class="bar">
+<div class="fill red" style="width:{{severe}}%"></div>
+</div>
+
+
+<div class="suggestion-box">
+
+<h3>Treatment Suggestions</h3>
+
+{{suggestions}}
+
+</div>
+
+
+<a href="/predict" class="button">Detect Another Image</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

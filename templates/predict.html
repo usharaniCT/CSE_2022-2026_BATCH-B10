@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Damage Detection</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f4f6f9;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:230px;
+height:100vh;
+background:#2c3e50;
+color:white;
+position:fixed;
+padding-top:20px;
+}
+
+.sidebar h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.sidebar a{
+display:block;
+padding:15px;
+color:white;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#34495e;
+}
+
+/* Main */
+
+.main{
+margin-left:230px;
+padding:40px;
+}
+
+/* Upload Card */
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:8px;
+
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+
+max-width:600px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+.card h2{
+margin-bottom:20px;
+}
+
+/* File input */
+
+input[type=file]{
+margin:15px 0;
+}
+
+/* Preview */
+
+#preview{
+width:100%;
+max-height:300px;
+margin-top:15px;
+display:none;
+border-radius:8px;
+}
+
+/* Buttons */
+
+.btn{
+
+padding:12px 20px;
+
+border:none;
+
+background:#27ae60;
+
+color:white;
+
+border-radius:5px;
+
+cursor:pointer;
+
+margin-top:10px;
+
+}
+
+.btn:hover{
+background:#219150;
+}
+
+/* Camera */
+
+video{
+width:100%;
+border-radius:8px;
+margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>Insect AI</h2>
+
+<a href="/dashboard"><i class="fa fa-home"></i> Dashboard</a>
+
+<a href="/predict"><i class="fa fa-camera"></i> Detect Damage</a>
+
+<a href="/history"><i class="fa fa-history"></i> History</a>
+
+<a href="/profile"><i class="fa fa-user"></i> Profile</a>
+
+<a href="/logout"><i class="fa fa-sign-out"></i> Logout</a>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+<div class="card">
+
+<h2>Upload Image for Detection</h2>
+
+<form method="POST" enctype="multipart/form-data">
+
+<input type="file" name="image" accept="image/*" onchange="previewImage(event)" required>
+
+<br>
+
+<img id="preview">
+
+<br>
+
+<button type="submit" class="btn">
+<i class="fa fa-search"></i> Detect Damage
+</button>
+
+</form>
+
+<hr>
+
+<h3>Or Capture Using Camera</h3>
+
+<video id="camera" autoplay></video>
+
+<br>
+
+<button class="btn" onclick="captureImage()">
+<i class="fa fa-camera"></i> Capture Image
+</button>
+
+<canvas id="canvas" style="display:none"></canvas>
+
+</div>
+
+</div>
+
+<script>
+
+/* Image preview */
+
+function previewImage(event){
+
+const reader = new FileReader();
+
+reader.onload = function(){
+
+const output = document.getElementById('preview');
+
+output.src = reader.result;
+
+output.style.display = "block";
+
+}
+
+reader.readAsDataURL(event.target.files[0]);
+
+}
+
+
+/* Camera */
+
+const video = document.getElementById("camera");
+
+navigator.mediaDevices.getUserMedia({video:true})
+
+.then(stream => {
+
+video.srcObject = stream;
+
+});
+
+
+function captureImage(){
+
+const canvas = document.getElementById("canvas");
+
+const context = canvas.getContext("2d");
+
+canvas.width = video.videoWidth;
+
+canvas.height = video.videoHeight;
+
+context.drawImage(video,0,0);
+
+alert("Image Captured! Please upload manually if needed.");
+
+}
+
+</script>
+
+</body>
+</html>
