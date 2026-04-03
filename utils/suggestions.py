@@ -63,7 +63,7 @@ if treatment is delayed.
 
 Recommended Treatment:
 
-1. Immediately remove heavily infected plants or leaves.
+1. Immediately remove heavily infected area.
 2. Apply strong biological pesticides like Bacillus thuringiensis.
 3. Spray recommended insecticides such as:
    - Spinosad

@@ -84,6 +84,15 @@ border:1px solid #ccc;
 
 }
 
+/* Location dropdown styling */
+select{
+width:100%;
+padding:12px;
+margin:8px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
 button{
 
 width:100%;
@@ -138,6 +147,37 @@ background:#c0392b;
 <input type="password" name="password" placeholder="Password" required>
 
 <input type="password" name="confirm_password" placeholder="Re-enter Password" required>
+
+<!-- Location Field Added -->
+<select name="location" required>
+<option value="">Select Location</option>
+
+<!-- Andhra Pradesh -->
+<option value="Anantapur">Anantapur</option>
+<option value="Kadapa">Kadapa</option>
+<option value="Kurnool">Kurnool</option>
+<option value="Tirupati">Tirupati</option>
+<option value="Chittoor">Chittoor</option>
+<option value="Nellore">Nellore</option>
+<option value="Guntur">Guntur</option>
+<option value="Vijayawada">Vijayawada</option>
+<option value="Visakhapatnam">Visakhapatnam</option>
+
+<!-- Telangana -->
+<option value="Hyderabad">Hyderabad</option>
+<option value="Warangal">Warangal</option>
+
+<!-- Karnataka -->
+<option value="Bangalore">Bangalore</option>
+<option value="Mysore">Mysore</option>
+
+<!-- Other Cities -->
+<option value="Chennai">Chennai</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Delhi">Delhi</option>
+
+<option value="Other">Other</option>
+</select>
 
 <button type="submit">Register</button>
 
