@@ -3,87 +3,66 @@ def get_suggestions(result):
     suggestions = {
 
         "normal": """
-STAGE: NORMAL (Early Detection)
+STAGE 1: NORMAL (Early Detection)
+The Prevention Phase" The infestation is in its initial stages, and the plant shows minimal to no visible damage.
+1. Description & Signs
+మొదటి దశ: ప్రారంభ దశ (ముందస్తు గుర్తింపు)
 
-Description:
-The plant shows very small or minimal insect damage. Leaves may have tiny bite marks
-or very small discoloration spots. The crop is still healthy and the infestation
-has just started.
+PLACES OF DAMAGE (ప్రభావిత ప్రాంతాలు):
+English: Foundation bases, door frames, window sills, and skirting boards.
+తెలుగు: ఇంటి పునాదులు, తలుపుల గడపలు, కిటికీ ఫ్రేములు మరియు గోడ మూలలు.
 
-Recommended Treatment:
+CAUSE OF DAMAGE (కారణాలు):
+English: Cracks in the foundation, high moisture levels, and wood directly touching damp soil.
+తెలుగు: పునాదులలో పగుళ్లు, గదిలో తేమ ఎక్కువగా ఉండటం మరియు చెక్క నేరుగా తడి నేలను తాకడం.
 
-1. Inspect plants regularly for insect activity.
-2. Remove affected leaves manually if damage is minimal.
-3. Spray Neem Oil solution (5 ml per liter of water) once every 7 days.
-4. Maintain proper field hygiene by removing weeds.
-5. Encourage natural predators like ladybugs and spiders.
-
-Preventive Measures:
-
-• Maintain good irrigation practices.
-• Use insect-resistant crop varieties if available.
-• Install yellow sticky traps to monitor pest population.
-• Avoid excessive nitrogen fertilizers.
+PRECAUTIONS & ACTION (జాగ్రత్తలు మరియు నివారణ):
+English: Seal all cracks with waterproof cement. Keep the area around walls dry. Apply Neem oil spray to the edges once a week.
+తెలుగు: గోడల పగుళ్లను వాటర్‌ప్రూఫ్ సిమెంట్‌తో పూడ్చాలి. గోడల చుట్టూ తడి లేకుండా చూడాలి. వారానికి ఒకసారి వేప నూనెను గోడల వెంట చల్లాలి.
 """,
 
         "moderate": """
-STAGE: MODERATE DAMAGE
+STAGE 2: MODERATE DAMAGE
+రెండవ దశ: మధ్యస్థ దశ (నష్టం మొదలైన సమయం)
 
-Description:
-Leaves show visible holes, chewing marks, or curling. Insects may be clearly
-visible on the plant. The infestation has started spreading and can reduce
-crop productivity if not controlled.
+PLACES OF DAMAGE (ప్రభావిత ప్రాంతాలు):
+English: Inside wardrobes, plywood partitions, and behind heavy furniture or wall-mounted units.
+తెలుగు: బీరువాల లోపల, ప్లైవుడ్ పార్టిషన్లు, బరువుగా ఉండే ఫర్నిచర్ వెనుక భాగాలు.
 
-Recommended Treatment:
+CAUSE OF DAMAGE (కారణాలు):
+English: Lack of air ventilation, trapped humidity behind walls, and storing cardboard boxes near wood.
+తెలుగు: గాలి వెలుతురు సరిగ్గా లేకపోవడం, గోడల వెనుక తేమ పేరుకుపోవడం మరియు అట్టపెట్టెలను చెక్క సామాగ్రి దగ్గర ఉంచడం.
 
-1. Spray Neem Oil or Botanical Pesticide twice a week.
-2. Apply biological control agents like Bacillus thuringiensis (Bt).
-3. Remove heavily damaged leaves to stop spread.
-4. Use pheromone traps to reduce pest population.
-5. Spray soap water solution (10 ml liquid soap per liter water).
-
-Chemical Control (if necessary):
-
-• Use Imidacloprid or Spinosad spray as recommended by agricultural experts.
-
-Preventive Measures:
-
-• Regular field monitoring.
-• Crop rotation.
-• Avoid water stagnation around plants.
+PRECAUTIONS & ACTION (జాగ్రత్తలు మరియు నివారణ):
+English: Inject Termiticide (Fipronil) or Boric Acid into small drill holes. Expose movable furniture to direct sunlight for 3-4 days.
+తెలుగు: చిన్న రంధ్రాలు చేసి అందులోకి చెదల మందును ఇంజెక్ట్ చేయాలి. పాడైన సామాగ్రిని 3-4 రోజులు నేరుగా ఎండలో ఉంచాలి.
 """,
 
         "severe": """
-STAGE: SEVERE DAMAGE
+STAGE 3: SEVERE DAMAGE (Structural Risk)
+మూడవ దశ: తీవ్ర దశ (నిర్మాణ ప్రమాదం)
 
-Description:
-Large areas of leaves are destroyed or skeletonized. Insects are heavily
-present and the crop health is severely affected. Yield loss is very likely
-if treatment is delayed.
+PLACES OF DAMAGE (ప్రభావిత ప్రాంతాలు):
+English: Main structural roof beams, support pillars, and fixed cabinetry/wardrobes.
+తెలుగు: ఇంటి పైకప్పు దూలాలు (Beams), మెయిన్ స్తంభాలు మరియు గోడకు ఫిక్స్ చేసిన వార్డ్‌రోబ్‌లు.
 
-Recommended Treatment:
+CAUSE OF DAMAGE (కారణాలు):
+English: Neglect of early signs, leading to subterranean colonies destroying the core of the wood.
+తెలుగు: ప్రారంభంలో నిర్లక్ష్యం చేయడం వల్ల భూమిలోని చెద పుట్టలు ఇంటి ప్రధాన నిర్మాణాన్ని లోపల నుండి తినేయడం.
 
-1. Immediately remove heavily infected area.
-2. Apply strong biological pesticides like Bacillus thuringiensis.
-3. Spray recommended insecticides such as:
-   - Spinosad
-   - Chlorpyrifos
-   - Imidacloprid
+REPAIR OR REPLACE? (మార్చాలా లేదా బాగుచేయాలా?):
+English: REPLACE IMMEDIATELY if the wood is a structural support or if more than 30% of the surface sounds hollow. The wood has lost its strength and is unsafe.
+తెలుగు: వెంటనే మార్చాలి - ఒకవేళ అది పునాది దూలం (Support beam) అయినా లేదా 30% కంటే ఎక్కువ దొల్లగా (Hollow) మారినా ఆ సామాగ్రిని వెంటనే మార్చాలి.
 
-4. Repeat pesticide application every 5–7 days if infestation persists.
-5. Use pheromone traps and light traps to reduce pest population.
+EMERGENCY PRECAUTIONS (అత్యవసర జాగ్రత్తలు):
+English: Remove and burn infested wood. Perform a professional "Soil Treatment" around the+ foundation using Imidacloprid.
+తెలుగు: పాడైన చెక్కను తీసి వెంటనే కాల్చివేయాలి. ఇంటి పునాది చుట్టూ భూమిలోకి మందును పంపించే 'సాయిల్ ట్రీట్మెంట్' చేయించాలి.
 
-Emergency Control Measures:
-
-• Apply systemic insecticides as per agricultural guidelines.
-• Consult local agricultural extension services for proper dosage.
-
-Preventive Measures:
-
-• Deep ploughing after harvest.
-• Maintain proper crop spacing.
-• Destroy infected plant residues.
-• Implement Integrated Pest Management (IPM).
+FINAL SAFETY CHECKLIST / ముగింపు జాగ్రత్తలు:
+Never let wood touch damp soil. (చెక్కను తడి నేలపై ఉంచకండి).
+Fix water leaks immediately. (లీకేజీలను వెంటనే బాగు చేయండి).
+Do not store cardboard or old books against walls. (అట్టపెట్టెలను గోడలకు ఆనించి ఉంచకండి).
+Ensure sunlight and air in dark corners. (చీకటి గదుల్లో గాలి, వెలుతురు ఉండేలా చూడండి).
 """
     }
 
