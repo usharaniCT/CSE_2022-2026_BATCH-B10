@@ -3,7 +3,7 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 
-model = load_model("models/insect_model.h5")
+model = load_model("models/insect_damage_model.h5", compile=False)
 
 classes = ["normal", "moderate", "severe"]
 
