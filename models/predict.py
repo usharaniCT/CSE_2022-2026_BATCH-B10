@@ -1,31 +1,13 @@
 import numpy as np
-import tensorflow as tf
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image
-
-model = load_model("models/insect_damage_model.h5", compile=False)
+import random
 
 classes = ["normal", "moderate", "severe"]
 
 def predict_image(img_path):
+    # Dummy prediction (for deployment/demo)
+    result = random.choice(classes)
 
-    img = image.load_img(img_path, target_size=(224,224))
-    img = image.img_to_array(img)
-    img = img/255.0
-    img = np.expand_dims(img, axis=0)
-
-    prediction = model.predict(img)
-
-    result_index = np.argmax(prediction)
-
-    result = classes[result_index]
-
-    prob = prediction[0]   # <-- this gives 3 probabilities
+    # Fake probabilities
+    prob = np.array([0.2, 0.5, 0.3])
 
     return result, prob
-    send_detection_email(
-    session["user"],
-    path,
-    result,
-    suggestions
-)
